@@ -33,6 +33,7 @@ import eu.javaexperience.rpc.codegen.PhpRpcInterfaceGenerator;
 import eu.javaexperience.rpc.codegen.RpcSourceBuilder;
 import eu.javaexperience.rpc.http.RpcHttpTools;
 import eu.javaexperience.text.StringTools;
+import eu.javaexperience.url.UrlTools;
 import eu.javaexperience.web.Context;
 import eu.javaexperience.web.HttpTools;
 import eu.javaexperience.web.MIME;
@@ -174,7 +175,7 @@ public abstract class RpcUrlNode<R extends RpcRequest, S extends RpcSession> ext
 	{
 		Map<String, String> opts = new SmallMap<>();
 		
-		HttpTools.fillMultiMap(opts, ctx.getRequest().getParameterMap());
+		UrlTools.fillMultiMap(opts, ctx.getRequest().getParameterMap());
 		
 		List<RpcFacility> apis = new ArrayList<>();
 		
