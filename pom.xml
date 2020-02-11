@@ -20,7 +20,7 @@
 		<repository>
 			<id>jvx-repo</id>
 			<name>Javaexprience-custom-repo</name>
-			<url>http://maven.javaexperience.eu/</url>
+			<url>https://maven.javaexperience.eu/</url>
 		</repository>
 	</repositories>
 
